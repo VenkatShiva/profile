@@ -11,10 +11,12 @@ export const FixedNavbar = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 99;
   height: var(--nav-height);
   display: flex;
   padding: 0 3rem;
   background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(6px);
   box-shadow: 0 10px 30px -10px var(--navy-shadow);
   .left-logo {
     flex: 1;

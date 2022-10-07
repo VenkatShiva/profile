@@ -14,7 +14,13 @@ const dashAnim = keyframes`
   to {
     stroke-dashoffset: 0;
   }
-`
+`;
+
+const lazyShow = keyframes`
+  to {
+    opacity: 1;
+  }
+`;
 
 export const Loader = styled.div`
   width: 100vw;
@@ -56,7 +62,12 @@ export const Loader = styled.div`
     #v-svg {
       stroke-dasharray: 462;
       stroke-dashoffset: 462;
-      animation: ${dashAnim} 2s ease forwards;
+      animation: ${dashAnim} 1.5s ease forwards;
+    }
+    #letter-v {
+      opacity: 0;
+      animation: ${lazyShow} 0.3s ease-in forwards;
+      animation-delay: 1.5s;
     }
   }
 `;

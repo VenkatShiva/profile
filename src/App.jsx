@@ -4,12 +4,16 @@ import { AppMain } from "./app-styles";
 import InitialLoader from "./sections/Loader";
 import Navbar from "./sections/Navbar";
 import Content from "./sections/content";
+import Socials from "./sections/Socials";
+import VerticalEmail from "./sections/Email";
 
 function AppContainer() {
   return (
     <AppMain>
       <Navbar />
       <Content />
+      <Socials />
+      <VerticalEmail />
     </AppMain>
   );
 }
@@ -18,8 +22,8 @@ function App() {
   const [showLoader, setShowLoader] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      setShowLoader(false);
-    }, 2050);
+      setShowLoader(false); 
+    }, 2350);
   }, []);
   return showLoader ? <InitialLoader /> : <AppContainer />;
 }

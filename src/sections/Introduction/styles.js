@@ -2,10 +2,11 @@ import styled, { css } from "styled-components";
 
 export const IntroComp = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: var(--nav-height) 0;
   .my-name-is {
     font-size: 1.25rem;
     animation-delay: 1.2s;
@@ -56,7 +57,7 @@ export const IntroComp = styled.div`
 `;
 
 export const BtnStyle = css`
-animation-delay: 2s;
+  animation-delay: 2s;
   max-width: 200px;
   margin: 1.5rem 0 0 0;
 `;
