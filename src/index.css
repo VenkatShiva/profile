@@ -7,6 +7,8 @@
   --green: #64ffda;
   --nav-height: 4rem;
   --navy-shadow: rgba(2, 12, 27, 0.7);
+  --light-navy: #112240;
+  --skill-navy: #08162c;
   --transistion: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -41,6 +43,17 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.lazy-hide {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: 0.5s ease-in-out;
+}
+
+.lazy-hide.lazy-show {
+  opacity: 1;
+  transform: translateY(0rem);
 }
 
 .lazy-load {

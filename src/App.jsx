@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { AppMain } from "./app-styles";
 import InitialLoader from "./sections/Loader";
 import Navbar from "./sections/Navbar";
-import Content from "./sections/content";
+import Content from "./sections/Content";
 import Socials from "./sections/Socials";
 import VerticalEmail from "./sections/Email";
 
@@ -19,7 +19,7 @@ function AppContainer() {
 }
 
 function App() {
-  const [showLoader, setShowLoader] = useState(true);
+  const [showLoader, setShowLoader] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setShowLoader(false); 

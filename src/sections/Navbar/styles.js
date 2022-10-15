@@ -18,6 +18,13 @@ export const FixedNavbar = styled.nav`
   background-color: rgba(10, 25, 47, 0.85);
   backdrop-filter: blur(6px);
   box-shadow: 0 10px 30px -10px var(--navy-shadow);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  &.without-shadow {
+    box-shadow: none;
+  }
+  &.hide {
+    transform: translateY(calc(var(--nav-height) * -1));
+  }
   .left-logo {
     flex: 1;
     display: flex;
