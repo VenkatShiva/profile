@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
-function useOnIntersect(elem) {
+function useOnIntersect(elem, threshold = 0.4) {
   const [show, setShow] = useState(false);
   useEffect(() => {
     let elemObserver;
     if (window.IntersectionObserver) {
       if (elem?.current) {
         const options = {
-          threshold: 0.4,
+          threshold: threshold,
         };
         elemObserver = new IntersectionObserver((entries) => {
           const currentImage = entries[0];

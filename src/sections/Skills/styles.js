@@ -10,6 +10,7 @@ export const Header = styled.h1`
   font-size: 2rem;
   padding: 1rem 0;
   text-transform: uppercase;
+  text-decoration: underline;
   span {
     color: var(--green);
   }

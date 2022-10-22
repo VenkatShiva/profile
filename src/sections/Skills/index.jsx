@@ -28,7 +28,7 @@ function Skills() {
     if (!show) return;
     const totalSkills = skillData.length;
     const timerId = setInterval(() => {
-      if (hoverIdRef?.current) return;
+      if (hoverIdRef?.current !== null) return;
       setActive((oldActive) => {
         if (oldActive === totalSkills - 1) {
           return 0;
@@ -47,9 +47,7 @@ function Skills() {
       className={`lazy-hide ${show ? "lazy-show" : ""}`}
       id="skills"
     >
-      <Header>
-        <span>01. </span>Skills
-      </Header>
+      <Header>Skills</Header>
       <SkillContent>
         <SkillGrid>
           {skillData.map((skill, index) => (
