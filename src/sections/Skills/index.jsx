@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 
 import {
   SkillSection,
-  Header,
   SkillContent,
   SkillGrid,
   GridItem,
@@ -11,6 +10,7 @@ import {
 import skillData from "./data";
 
 import useOnIntersect from "../../hooks/intersection";
+import { Header } from "../Experience/styles";
 
 function Skills() {
   const skillRef = useRef(null);

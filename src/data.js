@@ -52,7 +52,7 @@ export const ExperienceData = [
     duration: "Dec 2018 - Feb 2019",
     skills: ["ReactJS", "NodeJS", "JavaScript", "jQuery", "HTML", "CSS"],
     desc: [
-      "Training on Front-End technologies",
+      "Training on Front-End technologies.",
       "Developing web apps using NodeJS, Express, ReactJS, MongoDB.",
     ],
   },

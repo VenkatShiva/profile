@@ -6,15 +6,6 @@ export const SkillSection = styled.section`
   flex-direction: column;
 `;
 
-export const Header = styled.h1`
-  font-size: 2rem;
-  padding: 1rem 0;
-  text-transform: uppercase;
-  text-decoration: underline;
-  span {
-    color: var(--green);
-  }
-`;
 
 export const SkillContent = styled.div`
   background-color: var(--light-navy);
