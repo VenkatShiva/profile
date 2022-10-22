@@ -3,6 +3,7 @@ import Introduction from "../Introduction";
 import AboutMe from "../About";
 import Experience from "../Experience";
 import Skills from "../Skills";
+import Contact from "../Contact";
 
 function Content() {
   return (
@@ -11,6 +12,7 @@ function Content() {
       <AboutMe />
       <Experience />
       <Skills />
+      <Contact />
     </ContentComp>
   );
 }

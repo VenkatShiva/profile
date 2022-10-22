@@ -50,23 +50,23 @@ function Navbar() {
       <div className="right-links">
         <ul className="links">
           <li>
-            <a className="anchor lazy-load" href="#me">
-              <span>01.</span> Me
-            </a>
-          </li>
-          <li>
-            <a className="anchor lazy-load" href="#about">
-              <span>02.</span> About
+            <a className="anchor lazy-load" href="#about-me">
+              <span>01.</span> About Me
             </a>
           </li>
           <li>
             <a className="anchor lazy-load" href="#experience">
-              <span>03.</span> Experience
+              <span>02.</span> Experience
             </a>
           </li>
           <li>
-            <a className="anchor lazy-load" href="#contact">
-              <span>04.</span> Contact
+            <a className="anchor lazy-load" href="#skills">
+              <span>03.</span> Skills
+            </a>
+          </li>
+          <li>
+            <a className="anchor lazy-load" href="#contact-me">
+              <span>04.</span> Get In Touch
             </a>
           </li>
         </ul>

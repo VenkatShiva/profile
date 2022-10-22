@@ -21,6 +21,10 @@
   font-family: "Ubuntu Mono", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Ubuntu Mono", monospace, -apple-system, BlinkMacSystemFont,
