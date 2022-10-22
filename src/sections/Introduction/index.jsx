@@ -3,7 +3,10 @@ import Button from "../../components/Button";
 
 function Introduction() {
   const onViewResume = () => {
-    window.open("/venkat.pdf", "_blank");
+    window.open(
+      "https://drive.google.com/file/d/1iPxORtddqsn4lo_iMC91dpOj-Zgar6JC/view?usp=sharing",
+      "_blank"
+    );
   };
   return (
     <IntroComp>
