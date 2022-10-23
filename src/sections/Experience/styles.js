@@ -121,6 +121,7 @@ export const SkillCont = styled.span`
 
 export const Description = styled.ul`
   flex: 0.6;
+  padding-left: 1.5rem;
   li {
     margin: 0.1rem 0;
   }

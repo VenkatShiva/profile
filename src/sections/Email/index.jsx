@@ -28,7 +28,7 @@ const Vertical = styled.div`
     text-decoration: none;
     transition: transform 0.2s ease;
     padding: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     &:hover {
       transform: translateY(-0.75rem);
       color: var(--green);
@@ -39,5 +39,12 @@ const Vertical = styled.div`
     height: 4rem;
     width: 2px;
     background: var(--white);
+  }
+  @media only screen and (max-width: 1200px)  {
+    right: 2rem;
+  }
+  @media only screen and (max-width: 800px) {
+    right: 0px;
+    animation-delay: 1.6s;
   }
 `;

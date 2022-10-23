@@ -15,6 +15,9 @@ export const SocialsComp = styled.div`
     width: 2px;
     background: var(--white);
   }
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const MediaCont = styled.ul`
@@ -34,6 +37,16 @@ export const MediaCont = styled.ul`
       svg {
         fill: var(--green);
       }
+    }
+  }
+  &.mobile {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    animation-delay: 1.2s;
+    .social-link {
+      padding: 1rem;
+      margin: 0 1rem;
     }
   }
 `;

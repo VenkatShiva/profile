@@ -22,13 +22,23 @@ function Contact() {
         <div className="contact-wrp">
           <div className="contact">
             <span className="type">Mobile: </span>
-            <a className="value" href="tel:+918096695836">
+            <a
+              className="value"
+              href="tel:+918096695836"
+              target="_blank"
+              rel="noreferrer"
+            >
               +91 8096695836
             </a>
           </div>
           <div className="contact">
             <span className="type">Email: </span>
-            <a className="value" href="mailto:avenkatashiva@gmail.com">
+            <a
+              className="value"
+              href="mailto:avenkatashiva@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               avenkatashiva@gmail.com
             </a>
           </div>
@@ -37,6 +47,8 @@ function Contact() {
             <a
               className="value"
               href="https://www.linkedin.com/in/venkatashiva-avula-1089/"
+              target="_blank"
+              rel="noreferrer"
             >
               venkatashiva-avula-1089
             </a>

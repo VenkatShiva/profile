@@ -1,15 +1,17 @@
 import { useEffect, useRef, useState } from "react";
-
-import { FixedNavbar } from "./styles";
-import Vsvg from "../../assets/svgs/v-svg";
+import DesktopNavbar from "./Desktop";
+import MobileNavbar from "./Mobile";
 
 function Navbar() {
-  // 0 --> show without shadow
-  // 1 --> show with shadow
-  // 2 --> hide
+  const [mobile, setMobile] = useState(() => {
+    return window.innerWidth <= 800;
+  });
   const [showNavbar, setShowNavbar] = useState(0);
   const myScrollY = useRef(window.scrollY || 0);
   useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth <= 800);
+    };
     const style = getComputedStyle(document.body);
     const navbarHeightRem = parseInt(style.getPropertyValue("--nav-height"));
     const remValue = parseInt(style.getPropertyValue("font-size"));
@@ -29,8 +31,10 @@ function Navbar() {
         return setShowNavbar(2);
       }
     }
+    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", onScrollHandler);
     return () => {
+      window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", onScrollHandler);
     };
   }, []);
@@ -39,39 +43,11 @@ function Navbar() {
     1: "with-shodow",
     2: "hide",
   };
-  const activeCls = clsMap[showNavbar] || "without-shadow";
-  return (
-    <FixedNavbar className={activeCls}>
-      <div className="left-logo">
-        <a href="/" className="letter-v lazy-load">
-          <Vsvg />
-        </a>
-      </div>
-      <div className="right-links">
-        <ul className="links">
-          <li>
-            <a className="anchor lazy-load" href="#about-me">
-              <span>01.</span> About Me
-            </a>
-          </li>
-          <li>
-            <a className="anchor lazy-load" href="#experience">
-              <span>02.</span> Experience
-            </a>
-          </li>
-          <li>
-            <a className="anchor lazy-load" href="#skills">
-              <span>03.</span> Skills
-            </a>
-          </li>
-          <li>
-            <a className="anchor lazy-load" href="#contact-me">
-              <span>04.</span> Get In Touch
-            </a>
-          </li>
-        </ul>
-      </div>
-    </FixedNavbar>
+  const activeCls = clsMap[showNavbar] || "with-shadow";
+  return mobile ? (
+    <MobileNavbar activeCls={activeCls} />
+  ) : (
+    <DesktopNavbar activeCls={activeCls} />
   );
 }
 

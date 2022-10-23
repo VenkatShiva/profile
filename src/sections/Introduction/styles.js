@@ -54,10 +54,27 @@ export const IntroComp = styled.section`
       }
     }
   }
+  @media only screen and (max-width: 800px) {
+    .my-name-is {
+      animation-delay: 0.5s;
+    }
+    .name {
+      animation-delay: 0.7s;
+    }
+    .desg {
+      animation-delay: 0.9s;
+    }
+    .description {
+      animation-delay: 1.1s;
+    }
+  }
 `;
 
 export const BtnStyle = css`
   animation-delay: 2s;
   max-width: 200px;
   margin: 1.5rem 0 0 0;
+  @media only screen and (max-width: 800px) {
+    animation-delay: 1.3s;
+  }
 `;
