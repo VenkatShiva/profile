@@ -24,8 +24,8 @@ function Experience() {
     >
       <Header>Experience</Header>
       <ExpContent>
-        {ExperienceData.map((exp) => (
-          <ExpCard>
+        {ExperienceData.map((exp, index1) => (
+          <ExpCard key={"company-" + exp.name}>
             <div className="company-logo">
               <img src={exp.logo} alt={exp.name} />
             </div>
@@ -41,14 +41,14 @@ function Experience() {
               <h4 className="skill-cont">
                 <span className="head">Skills:</span>
                 <br />
-                {exp.skills?.map((skil) => (
-                  <SkillCont>{skil}</SkillCont>
+                {exp.skills?.map((skil, index2) => (
+                  <SkillCont key={"skill-" + index1 + index2}>{skil}</SkillCont>
                 ))}
               </h4>
             </CompanyDetails>
             <Description>
-              {exp.desc?.map((des) => (
-                <li>{des}</li>
+              {exp.desc?.map((des, index2) => (
+                <li key={"li-" + index1 + index2}>{des}</li>
               ))}
             </Description>
           </ExpCard>

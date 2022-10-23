@@ -13,6 +13,16 @@ function MobileNavbar({ activeCls }) {
   const handleMenu = (show = false) => {
     setShowMenu(show);
   };
+  useEffect(() => {
+    let hide = "";
+    if (showMenu) {
+      hide = "hidden";
+    }
+    document.body.style.overflow = hide;
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [showMenu]);
   return (
     <FixedNavbar className={activeCls}>
       <LeftLogo>
