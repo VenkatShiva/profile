@@ -26,6 +26,9 @@ export const FixedNavbar = styled.nav`
   &.hide {
     transform: translateY(calc(var(--nav-height) * -1));
   }
+  @media only screen and (max-width: 530px) {
+    padding: 0 1.5rem;
+  }
 `;
 
 export const LeftLogo = styled.div`

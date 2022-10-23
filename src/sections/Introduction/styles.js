@@ -66,7 +66,11 @@ export const IntroComp = styled.section`
     }
     .description {
       animation-delay: 1.1s;
+      max-width: 100%;
     }
+  }
+  @media only screen and (max-width: 800px) {
+    
   }
 `;
 
@@ -76,5 +80,8 @@ export const BtnStyle = css`
   margin: 1.5rem 0 0 0;
   @media only screen and (max-width: 800px) {
     animation-delay: 1.3s;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 1.2rem;
   }
 `;

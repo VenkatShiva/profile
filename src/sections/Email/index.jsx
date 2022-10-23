@@ -44,7 +44,15 @@ const Vertical = styled.div`
     right: 2rem;
   }
   @media only screen and (max-width: 800px) {
-    right: 0px;
+    right: 0.5rem;
     animation-delay: 1.6s;
+  }
+  @media only screen and (max-width: 530px) {
+    right: 0px;
+    .email-href {
+      padding: 0.2rem;
+      font-size: 0.9rem;
+    }
+    width: 1.5rem;
   }
 `;

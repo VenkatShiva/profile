@@ -50,5 +50,13 @@ export const AboutCont = styled.section`
       }
     }
   }
+  @media only screen and (max-width: 530px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    .prf-pic {
+      margin: 0  0 1rem;
+    }
+  }
 `;
 

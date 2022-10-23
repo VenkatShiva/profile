@@ -33,4 +33,7 @@ export const ContctMe = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 530px) {
+    padding: 1.5rem;
+  }
 `;

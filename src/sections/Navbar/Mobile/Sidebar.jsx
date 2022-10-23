@@ -88,6 +88,9 @@ const CloseModal = styled.button`
       transform: rotate(-45deg);
     }
   }
+  @media only screen and (max-width: 530px) {
+    right: 1.5rem;
+  }
 `;
 
 const MobileLinks = styled.div`

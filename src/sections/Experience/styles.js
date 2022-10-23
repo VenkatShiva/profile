@@ -18,6 +18,9 @@ export const ExpContent = styled.div`
   background-color: var(--light-navy);
   padding: 2.5rem;
   border-radius: 0.25rem;
+  @media only screen and (max-width: 530px) {
+    padding: 2rem 1.5rem 1.5rem;
+  }
 `;
 
 // export const
@@ -70,6 +73,10 @@ export const ExpCard = styled.div`
       border: 1px solid var(--white);
       background-color: var(--skill-navy);
     }
+  }
+  @media only screen and (max-width: 530px)  {
+    flex-direction: column;
+    padding: 2rem 1.5rem 1.5rem;
   }
 `;
 
