@@ -6,6 +6,7 @@ import Navbar from "./sections/Navbar";
 import Content from "./sections/Content";
 import Socials from "./sections/Socials";
 import VerticalEmail from "./sections/Email";
+import Footer from "./sections/Footer";
 
 function AppContainer() {
   return (
@@ -14,6 +15,7 @@ function AppContainer() {
       <Content />
       <Socials />
       <VerticalEmail />
+      <Footer />
     </AppMain>
   );
 }
@@ -22,7 +24,7 @@ function App() {
   const [showLoader, setShowLoader] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      setShowLoader(false); 
+      setShowLoader(false);
     }, 2350);
   }, []);
   return showLoader ? <InitialLoader /> : <AppContainer />;
