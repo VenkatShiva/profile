@@ -37,6 +37,7 @@ export const LeftLogo = styled.div`
   align-items: center;
   animation-delay: 0.1s;
   .letter-v {
+    cursor: pointer;
     svg {
       height: 2.5rem;
       width: auto;

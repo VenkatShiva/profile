@@ -8,10 +8,10 @@ import Socials from "./sections/Socials";
 import VerticalEmail from "./sections/Email";
 import Footer from "./sections/Footer";
 
-function AppContainer() {
+function AppContainer({ showLoaderAnimation }) {
   return (
     <AppMain>
-      <Navbar />
+      <Navbar showLoaderAnimation={showLoaderAnimation} />
       <Content />
       <Socials />
       <VerticalEmail />
@@ -22,12 +22,23 @@ function AppContainer() {
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
-  useEffect(() => {
+  const hideShowLoader = () => {
     setTimeout(() => {
       setShowLoader(false);
     }, 2350);
+  };
+  const showLoaderAnimation = () => {
+    setShowLoader(true);
+    hideShowLoader();
+  };
+  useEffect(() => {
+    hideShowLoader();
   }, []);
-  return showLoader ? <InitialLoader /> : <AppContainer />;
+  return showLoader ? (
+    <InitialLoader />
+  ) : (
+    <AppContainer showLoaderAnimation={showLoaderAnimation} />
+  );
 }
 
 export default App;

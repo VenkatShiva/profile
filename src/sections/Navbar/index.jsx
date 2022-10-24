@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import DesktopNavbar from "./Desktop";
 import MobileNavbar from "./Mobile";
 
-function Navbar() {
+function Navbar({ showLoaderAnimation }) {
   const [mobile, setMobile] = useState(() => {
     return window.innerWidth <= 800;
   });
@@ -45,9 +45,15 @@ function Navbar() {
   };
   const activeCls = clsMap[showNavbar] || "with-shadow";
   return mobile ? (
-    <MobileNavbar activeCls={activeCls} />
+    <MobileNavbar
+      activeCls={activeCls}
+      showLoaderAnimation={showLoaderAnimation}
+    />
   ) : (
-    <DesktopNavbar activeCls={activeCls} />
+    <DesktopNavbar
+      activeCls={activeCls}
+      showLoaderAnimation={showLoaderAnimation}
+    />
   );
 }
 

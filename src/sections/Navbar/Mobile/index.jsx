@@ -4,7 +4,7 @@ import { RightBurgerMenu } from "./styles";
 import { useEffect, useState } from "react";
 import MobileSidebar from "./Sidebar";
 
-function MobileNavbar({ activeCls }) {
+function MobileNavbar({ activeCls, showLoaderAnimation }) {
   const [animate, setAnimate] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   useEffect(() => {
@@ -26,9 +26,9 @@ function MobileNavbar({ activeCls }) {
   return (
     <FixedNavbar className={activeCls}>
       <LeftLogo>
-        <a href="/" className="letter-v lazy-load">
+        <button onClick={showLoaderAnimation} className="letter-v lazy-load">
           <Vsvg />
-        </a>
+        </button>
       </LeftLogo>
       <RightBurgerMenu
         onClick={() => handleMenu(true)}
