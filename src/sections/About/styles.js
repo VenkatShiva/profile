@@ -16,9 +16,7 @@ export const AboutCont = styled.section`
     display: flex;
     border-radius: 0.25rem;
     position: relative;
-
     transition: 0.2s ease-in-out;
-
     margin-right: 2rem;
     position: relative;
     img {
@@ -75,7 +73,7 @@ export const AboutCont = styled.section`
     align-items: center;
     padding: 1.5rem;
     .prf-pic {
-      margin: 0 0 1rem;
+      margin: 0 0 2rem;
     }
   }
 `;
