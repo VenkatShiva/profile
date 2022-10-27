@@ -17,6 +17,7 @@ function AboutMe() {
       <AboutCont>
         <div className="prf-pic">
           <img src={me} alt="my profile pic" className="dp" />
+          <span className="border-anim"></span>
         </div>
         <div className="prf-det">
           <p>

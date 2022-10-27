@@ -13,24 +13,44 @@ export const AboutCont = styled.section`
     width: 10rem;
     height: 12rem;
     /* max-height: ; */
-    background-color: var(--green);
     display: flex;
     border-radius: 0.25rem;
     position: relative;
-    filter: grayscale(80%);
+
     transition: 0.2s ease-in-out;
-    margin-right: 1rem;
+
+    margin-right: 2rem;
+    position: relative;
     img {
       border-radius: 0.25rem;
       width: 100%;
       height: 100%;
       z-index: 1;
+      filter: grayscale(80%);
+      background-color: var(--white);
+    }
+    .border-anim {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0.8rem;
+      left: 0.8rem;
+      border: 2px solid var(--green);
+      border-radius: 0.25rem;
+      transition: 0.3s ease-in-out;
     }
   }
   &:hover {
     .prf-pic {
-      filter: grayscale(0%);
-      scale: 1.02;
+      img {
+        background-color: var(--green);
+        filter: grayscale(60%);
+      }
+    }
+    .border-anim {
+      top: 0.55rem;
+      left: 0.55rem;
+      border-color: var(--white);
     }
   }
   .prf-det {
@@ -55,8 +75,7 @@ export const AboutCont = styled.section`
     align-items: center;
     padding: 1.5rem;
     .prf-pic {
-      margin: 0  0 1rem;
+      margin: 0 0 1rem;
     }
   }
 `;
-
