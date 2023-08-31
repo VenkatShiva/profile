@@ -56,7 +56,7 @@ export const ExpCard = styled.div`
       height: 100%;
     }
   }
-  &:first-child {
+  &:nth-child(2) {
     img {
       position: relative;
       top: -0.08rem;

@@ -22,10 +22,10 @@ function useOnIntersect(elem, threshold = 0.4) {
     }
     return () => {
       if (elem?.current) {
-        elemObserver?.unobserve(elem.current);
+        elemObserver?.unobserve(elem?.current);
       }
     };
-  }, [elem]);
+  }, [elem?.current]);
   return show;
 }
 
