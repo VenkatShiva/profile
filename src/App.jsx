@@ -10,13 +10,15 @@ import Footer from "./sections/Footer";
 
 function AppContainer({ showLoaderAnimation }) {
   return (
-    <AppMain>
-      <Navbar showLoaderAnimation={showLoaderAnimation} />
-      <Content />
-      <Socials />
-      <VerticalEmail />
+    <>
+      <AppMain>
+        <Navbar showLoaderAnimation={showLoaderAnimation} />
+        <Content />
+        <Socials />
+        <VerticalEmail />
+      </AppMain>
       <Footer />
-    </AppMain>
+    </>
   );
 }
 

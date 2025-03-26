@@ -4,8 +4,8 @@ import Button from "../../components/Button";
 function Introduction() {
   const onViewResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1O-ufU3Jr5nuUMfATOw6pJSLVVhivNQ81/view?usp=sharing",
-      "_blank"
+      "https://drive.google.com/file/d/1PX_urfYA-1xESHlBRyJYwHkjRprKg6a_/view?usp=sharing",
+      "_blank",
     );
   };
   return (
@@ -16,8 +16,8 @@ function Introduction() {
         {"<>"} Front-End Developer {"</>"}
       </h2>
       <p className="description lazy-load">
-        An innovative software developer with 5 years of experience in building
-        scalable web applications and internal tools in a wide range of
+        An innovative software developer with more than 6 years of experience in
+        building scalable web applications and internal tools in a wide range of
         industries.
         <br />
         <span className="cur-cmp">

@@ -22,6 +22,7 @@ const FooterCont = styled.footer`
   flex-direction: column;
   justify-content: center;
   margin-top: 3rem;
+  width: 100%;
   ul {
     display: flex;
     justify-content: center;
