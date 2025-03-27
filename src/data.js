@@ -22,7 +22,10 @@ export const ExperienceData = [
     desc: [
       "Implementing POC tasks and developing core features for Journey Builder.",
       "Writing unit tests and automation tests using the Cucumber framework.",
+      "Leveraged AI technologies like Cursor, GitHub Copilot, and ChatGPT for development, resulting in a 15% improvement in deliverables.",
       "Implementing micro frontends architecture using Webpack Module Federation.",
+      "Dockerized UI applications for consistent, scalable, and efficient deployments.",
+      "Fixing security vulnerabilities to ensure compliance with all regulations.",
       "Implementing small to medium-sized backend tasks.",
       "Participating in grooming sessions to finalize UI requirements.",
       "Maintaining the codebase and tracking DEV/QA/PROD deployments.",
