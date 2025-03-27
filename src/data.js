@@ -12,6 +12,7 @@ export const ExperienceData = [
       "JavaScript",
       "NextJS",
       "ReactJS",
+      "Modele Federation",
       "NodeJS",
       "Zustand",
       "Cucumber",
@@ -21,6 +22,7 @@ export const ExperienceData = [
     desc: [
       "Implementing POC tasks and developing core features for Journey Builder.",
       "Writing unit tests and automation tests using the Cucumber framework.",
+      "Implementing micro frontends architecture using Webpack Module Federation.",
       "Implementing small to medium-sized backend tasks.",
       "Participating in grooming sessions to finalize UI requirements.",
       "Maintaining the codebase and tracking DEV/QA/PROD deployments.",
