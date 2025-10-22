@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 function Introduction() {
   const onViewResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1f0yFHtiNoQkuQDaghNA-HHuXksfyJWPm/view?usp=sharing",
+      "https://drive.google.com/file/d/1FMjhrrlvRKBrBJspq3wDl-ZiKAy_QIAQ/view?usp=sharing",
       "_blank",
     );
   };
@@ -22,8 +22,8 @@ function Introduction() {
         <br />
         <span className="cur-cmp">
           Currently, I'm working at{" "}
-          <a href="https://www.gupshup.io/" target="_blank" rel="noreferrer">
-            Gupshup
+          <a href="https://www.wipro.com/" target="_blank" rel="noreferrer">
+            Wipro
           </a>
           .
         </span>

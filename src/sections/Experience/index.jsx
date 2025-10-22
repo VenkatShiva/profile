@@ -32,7 +32,12 @@ function Experience() {
             <CompanyDetails>
               <h2 className="cmp-name">
                 <Work />
-                {exp.name}
+                <span>
+                  {exp.name}{" "}
+                  {exp.client && (
+                    <span style={{ fontSize: "1rem" }}>{exp.client}</span>
+                  )}{" "}
+                </span>
               </h2>
               <h3 className="duration">
                 <Date />

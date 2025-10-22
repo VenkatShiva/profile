@@ -74,7 +74,7 @@ export const ExpCard = styled.div`
       background-color: var(--skill-navy);
     }
   }
-  @media only screen and (max-width: 530px)  {
+  @media only screen and (max-width: 530px) {
     flex-direction: column;
     padding: 2rem 1.5rem 1.5rem;
   }
@@ -88,6 +88,7 @@ export const CompanyDetails = styled.div`
     align-items: center;
     margin-bottom: 0.5rem;
     svg {
+      flex-shrink: 0;
       height: 1.5rem;
       width: 1.5rem;
       margin-right: 0.4rem;

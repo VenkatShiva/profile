@@ -7,7 +7,7 @@ function Footer() {
     <FooterCont>
       <MediaContent />
       <p className="owner">
-        Designed & built by <br /> <b>Venkatashiva Avula</b>
+        Designed & developed by <br /> <b>Venkatashiva Avula</b>
       </p>
     </FooterCont>
   );

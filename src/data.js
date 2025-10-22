@@ -2,12 +2,41 @@ import campk12 from "./assets/pngs/campk12.png";
 import activeai from "./assets/pngs/activeai.png";
 import mountblue from "./assets/pngs/mountblue.png";
 import gupshup from "./assets/pngs/gupshup.png";
+import wipro from "./assets/pngs/wipro.png";
 
 export const ExperienceData = [
   {
+    name: "WIPRO",
+    client: "Optum - UHG",
+    logo: wipro,
+    duration: "May 2025 - Present",
+    skills: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "NextJS",
+      "ReactJS",
+      "Redux",
+      "NodeJS",
+      "Modele Federation",
+      "Zustand",
+    ],
+    desc: [
+      "Developing new features for an application called HR Command (HRC).",
+      "Maintaining and enhancing existing features for two other applications: Broker Command and Command Profile.",
+      "Writing unit tests and ensuring secure code standards in compliance with UHG guidelines.",
+      "Leveraging AI technologies such as GitHub Copilot and ChatGPT for development, resulting in a 35% improvement in deliverables.",
+      "Participating in refinement sessions to finalize UI requirements.",
+      "Tracking and deploying production releases versions.",
+      "Maintaining the codebase and managing DEV/QA/PROD deployments.",
+      "Optimizing React components for better performance and efficiency.",
+      "Developing clean, smooth, and responsive user interfaces.",
+    ],
+  },
+  {
     name: "Gupshup",
     logo: gupshup,
-    duration: "Jan 2023 - Present",
+    duration: "Jan 2023 - May 2025",
     skills: [
       "JavaScript",
       "NextJS",
