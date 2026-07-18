@@ -30,7 +30,7 @@ export const IntroComp = styled.section`
     animation-delay: 1.8s;
     color: var(--light-white);
     font-size: 1.25rem;
-    max-width: 60%;
+    max-width: 75%;
     .cur-cmp {
       margin-top: 1rem;
       display: inline-block;

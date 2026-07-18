@@ -4,6 +4,7 @@ import AboutMe from "../About";
 import Experience from "../Experience";
 import Skills from "../Skills";
 import Contact from "../Contact";
+import Projects from "../Project";
 
 function Content() {
   return (
@@ -11,6 +12,7 @@ function Content() {
       <Introduction />
       <AboutMe />
       <Experience />
+      <Projects />
       <Skills />
       <Contact />
     </ContentComp>

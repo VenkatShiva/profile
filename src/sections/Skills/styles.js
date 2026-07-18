@@ -100,7 +100,7 @@ export const GridItem = styled.div`
       transform: rotate(-60deg);
     }
   }
-  &.grid-item-1 {
+  &.grid-item-2 {
     .item-wrpper {
       .skill-img {
         background-color: #0069ff;
