@@ -21,7 +21,7 @@ export const IntroComp = styled.section`
   }
   .desg {
     animation-delay: 1.6s;
-    font-size: 2.75rem;
+    font-size: 2rem;
     font-weight: 900;
     color: var(--light-white);
     margin: 0 0 1rem 0;

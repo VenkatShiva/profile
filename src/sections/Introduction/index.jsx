@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 function Introduction() {
   const onViewResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1kwoRggWZcYonmkLfGC1tXjQeuSmo2iY2/view?usp=sharing",
+      "https://drive.google.com/file/d/1lVeZCNo_zPNozrqCcOUB-VLg_bCy2zti/view?usp=sharing",
       "_blank",
     );
   };
@@ -16,15 +16,16 @@ function Introduction() {
       <h1 className="name lazy-load">Venkatashiva Avula</h1>
 
       <h2 className="desg lazy-load">
-        {"<>"} Senior Software Engineer {"</>"}
+        {"<>"} Senior Frontend Engineer | Technical Lead {"</>"}
       </h2>
 
       <p className="description lazy-load">
-        Senior Software Engineer with 7+ years of experience building scalable
-        enterprise web applications using React, Next.js, TypeScript, Node.js,
-        Java, and Spring Boot. Passionate about frontend architecture,
-        application modernization, performance optimization, and building
-        high-quality digital products.
+        Senior Frontend Engineer with 7+ years of experience building scalable
+        enterprise applications using React, Next.js, and TypeScript. Expertise
+        in frontend architecture, Micro Frontends, application modernization,
+        performance optimization, and technical leadership, with hands-on
+        experience integrating REST APIs and contributing to Java/Spring Boot
+        and Node.js services.
         <br />
         <span className="cur-cmp">
           Currently working as a <strong>Technical Lead</strong> at{" "}
